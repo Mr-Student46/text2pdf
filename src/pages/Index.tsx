@@ -10,6 +10,7 @@ import { Slider } from "@/components/ui/slider";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { useToast } from "@/hooks/use-toast";
 import { jsPDF } from "jspdf";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const [text, setText] = useState("");
@@ -362,15 +363,15 @@ const Index = () => {
               © 2025 Text2PDF.app – 100% Free Online PDF Converter
             </p>
             <div className="flex justify-center gap-6 text-sm">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/privacy-policy" className="text-muted-foreground hover:text-primary transition-colors">
                 Privacy Policy
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              </Link>
+              <Link to="/terms-of-service" className="text-muted-foreground hover:text-primary transition-colors">
                 Terms of Service
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              </Link>
+              <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
                 Contact
-              </a>
+              </Link>
             </div>
             <p className="text-xs text-muted-foreground">
               Made with ❤️ using Lovable.dev
